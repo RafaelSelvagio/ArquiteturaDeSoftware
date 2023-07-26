@@ -22,4 +22,21 @@ public class Cliente {
     public String getEmail() {
         return email;
     }
+
+    public void setIdCliente(int idCliente) {
+		this.idCliente = idCliente;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	@Override
+    public String toString() {
+        return "Cliente [idCliente=" + idCliente + ", nome=" + nome + ", email=" + email + "]";
+    }
 }
