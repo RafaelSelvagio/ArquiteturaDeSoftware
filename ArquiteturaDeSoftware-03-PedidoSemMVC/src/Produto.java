@@ -22,4 +22,22 @@ public class Produto {
     public double getPreco() {
         return preco;
     }
+
+    public void setIdProduto(int idProduto) {
+		this.idProduto = idProduto;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+	@Override
+    public String toString() {
+        return "Produto [idProduto=" + idProduto + ", nome=" + nome + ", preco=" + preco + "]";
+    }
 }
+
