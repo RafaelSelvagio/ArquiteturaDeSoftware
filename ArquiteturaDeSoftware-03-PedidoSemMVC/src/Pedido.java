@@ -10,34 +10,38 @@ public class Pedido {
     private Date data;
 
     public Pedido(int idPedido, Cliente cliente, Produto produto, int quantidade, Date data) {
+    	this.criarPedido(idPedido, cliente, produto, quantidade, data);
+    }
+
+    public int getIdPedido() { return idPedido; }
+
+    public Cliente getCliente() { return cliente; }
+
+    public Produto getProduto() { return produto; }
+
+    public int getQuantidade() { return quantidade; }
+
+    public Date getData() { return data; }
+
+    public void setIdPedido(int idPedido) { this.idPedido = idPedido; }
+
+	public void setCliente(Cliente cliente) { this.cliente = cliente; }
+
+	public void setProduto(Produto produto) { this.produto = produto; }
+
+	public void setQuantidade(int quantidade) { this.quantidade = quantidade; }
+
+	public void setData(Date data) { this.data = data; }
+	
+	public void criarPedido(int idPedido, Cliente cliente, Produto produto, int quantidade, Date data) {
         this.idPedido = idPedido;
         this.cliente = cliente;
         this.produto = produto;
         this.quantidade = quantidade;
         this.data = data;
     }
-
-    public int getIdPedido() {
-        return idPedido;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public Produto getProduto() {
-        return produto;
-    }
-
-    public int getQuantidade() {
-        return quantidade;
-    }
-
-    public Date getData() {
-        return data;
-    }
-    
-    public void exibirPedido(Pedido pedido) {
+	
+	public void exibirPedido(Pedido pedido) {
         System.out.println("==== Detalhes do Pedido ====");
         System.out.println("ID: " + pedido.getIdPedido());
         System.out.println("Cliente: " + pedido.getCliente().getNome());
@@ -45,5 +49,11 @@ public class Pedido {
         System.out.println("Quantidade: " + pedido.getQuantidade());
         System.out.println("Data: " + pedido.getData());
         System.out.println("--------------------");
+    }
+
+	@Override
+    public String toString() {
+        return "Pedido [idPedido=" + idPedido + ", cliente=" + cliente + ", produto=" + produto + 
+        		", quantidade=" + quantidade + ", data=" + data + "]";
     }
 }
