@@ -26,7 +26,7 @@ Sinta-se à vontade para contribuir com correções, melhorias ou novos exemplos
 
 ## Licença
 
-Este repositório está licenciado sob a [Licença MIT](LICENSE). Sinta-se à vontade para usar o conteúdo disponível aqui para fins educacionais ou em seus próprios projetos.
+Este repositório está licenciado sob a [Licença MIT]. Sinta-se à vontade para usar o conteúdo disponível aqui para fins educacionais ou em seus próprios projetos.
 
 ## Contato
 
