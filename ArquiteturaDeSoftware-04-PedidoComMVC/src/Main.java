@@ -20,6 +20,8 @@ public class Main {
         
         // Cria um objeto pedido usando controller
         Pedido pedido = pedidoController.criarPedido(1, cliente, produto, 1, data);
+        
+        // Exibe os detalhes do pedido
         pedidoController.exibirDetalhesPedido(pedido);
     }
 }
