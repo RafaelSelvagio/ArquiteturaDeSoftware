@@ -14,8 +14,8 @@ public class PaisController {
         paisView = new PaisView();
     }
 
-    public void adicionarPais(String nome) {
-        Pais pais = new Pais(nome);
+    public void adicionarPais(String nome, String capital) {
+        Pais pais = new Pais(nome, capital);
         listaDePaises.add(pais);
     }
 
