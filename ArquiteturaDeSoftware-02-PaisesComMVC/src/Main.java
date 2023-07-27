@@ -20,7 +20,11 @@ public class Main {
                     System.out.print("Digite o nome do país: ");
                     scanner.nextLine(); // Consumir o '\n' após a leitura do número
                     String nome = scanner.nextLine();
-                    paisController.adicionarPais(nome);
+                    
+                    System.out.print("Digite a capital do país " + nome + ": ");
+                    String capital = scanner.nextLine();
+                    
+                    paisController.adicionarPais(nome, capital);
                     break;
                 case 2:
                     paisController.exibirListaDePaises();
