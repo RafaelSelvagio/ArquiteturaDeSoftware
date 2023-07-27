@@ -9,7 +9,7 @@ public class PaisView {
         System.out.println("--------------------");
         
         for (Pais pais : paises) {
-            System.out.println("País: " + pais.getNome());
+            System.out.println("País: " + pais.getNome() + " - Capital: " + pais.getCapital());
         }
         
         System.out.println("--------------------");
