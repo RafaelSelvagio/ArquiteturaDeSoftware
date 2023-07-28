@@ -17,11 +17,11 @@ public class Pais {
         this.nome = nome;
     }
 
-	public String getCapital() {
-		return capital;
-	}
+    public String getCapital() {
+	return capital;
+    }
 
-	public void setCapital(String capital) {
-		this.capital = capital;
-	}
+    public void setCapital(String capital) {
+	this.capital = capital;
+    }
 }
