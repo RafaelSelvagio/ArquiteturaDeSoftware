@@ -16,6 +16,6 @@ public class ProdutoController {
     }
 
     public void exibirDetalhesProduto(Produto produto) {
-    	produtoView.exibirCliente(produto);
+    	produtoView.exibirProduto(produto);
     }
 }
