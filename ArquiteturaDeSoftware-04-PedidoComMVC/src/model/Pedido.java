@@ -67,4 +67,3 @@ public class Pedido {
 				+ quantidade + ", data=" + data + "]";
 	}
 }
-s
