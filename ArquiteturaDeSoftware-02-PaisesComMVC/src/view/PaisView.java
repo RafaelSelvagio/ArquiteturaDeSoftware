@@ -47,4 +47,13 @@ public class PaisView {
     public void limparListaDePaises() {
         System.out.println("Lista de países foi limpa!\n");
     }
+    
+    /*
+     * Método exibe as informações referentes a um país, para isso, o método
+     * espera receber um país como parametro
+     */
+    public void exibirPais(Pais pais) {
+    	System.out.println("País: " + pais.getNome() + 
+				   		   " - Capital: " + pais.getCapital());
+    }
 }
